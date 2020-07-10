@@ -1,0 +1,301 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=25mm,
+	right=25mm,
+	top=20mm,
+}
+
+\usepackage{tikz}
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
+
+\usepackage{doi}
+%\usepackage[style=trad-plain]{biblatex}
+\usepackage[backend=bibtex, sorting=none]{biblatex}
+\addbibresource{report.bib}
+\DeclareDatamodelFields[type=field,datatype=literal]{mynote}
+\usepackage{xpatch}
+\xapptobibmacro{finentry}{\par\printfield{mynote}}{}{}
+
+
+\usepackage{lineno}
+%\linenumbers
+
+\begin{document}
+	
+\begin{center}
+	\textbf{{\LARGE Habilitation in Physics}} \\
+	\bigskip
+	{\large{}Research achievements, talks, teaching, supervision, workshop \\organization and publications delivered during the habilitation program}\\
+	\medskip
+	{\small February 27, 2020}
+
+\end{center}	
+	\medskip		
+\noindent
+Zinonos Zinonas\newline
+Max-Planck-Institut f\"{u}r Physik, M\"{u}nchen \\
+ 
+\section*{Research Achievements}
+
+\subsection*{Supersymmetry}
+Supersymmetry (SUSY) is one of the most appealing extensions of the Standard Model (SM). In its minimal realization, the Minimal Supersymmetric SM, it postulates the existence of a new bosonic (fermionic) partner for each fundamental SM fermion (boson), as well as an additional Higgs doublet. 
+Electroweakly interacting supersymmetric particles are charginos, neutralinos, sleptons, sneutrinos and squarks. Charginos and neutralinos are the mass eigenstates formed by linear combinations of the superpartners of the charged and neutral Higgs bosons and of the electroweak gauge bosons. Strongly interacting superpartners are the squarks and gluinos.
+
+In the absence of a protective symmetry, SUSY processes violating the lepton and baryon quantum numbers result in proton decay at a rate that is in conflict with the experimental constraints on its lifetime. This conflict can be avoided by imposing R-parity conservation (RPC).
+In RPC SUSY models, supersymmetric particles can only be produced in pairs and the lightest supersymmetric particle (LSP) is stable. This is in most models the lightest neutralino which is a natural candidate for Dark Matter (DM). Produced last in the decay chains of heavier SUSY particles, the neutralino LSP escapes detection leading thus to large missing transverse energy (MET); the canonical signature of SUSY particle production.
+
+The habilitation program focused on searching for Supersymmetry with leptons and taus with the ATLAS detector at the Large Hadron Collider.
+
+\subsection*{Search for SUSY in multileptonic final states}
+Multileptonic final states are very attractive channel for the search for new physics at the LHC because the overwhelming hadronic background can be strongly suppressed.
+%. Requiring a high multiplicity of isolated leptons (electrons and muons - including those originating from leptonic tau decays - and hadronically decaying taus) allows any new signature to be cleanly separated from the otherwise overwhelming hadron-rich background processes, typical of high-energy proton-proton ($pp$) collisions, even if its cross-section is small.
+
+In the habilitation program, searches for the production of charginos, neutralinos, sleptons and gluinos decaying to final states with at least four charged leptons are conducted.
+These searches exploit the complete $pp$ collision dataset delivered by the Large Hadron Collider (LHC) at a center-of-mass energy of $\sqrt{s}=13$~TeV, and collected and reconstructed with the ATLAS detector. Particular emphasis is placed on the search for light higgsino particles. The exclusion of gluino and stop masses up to the TeV mass scale qualifies now the light higgsinos to be discovered first at LHC, as motivated by naturalness. In General Gauge Mediated SUSY models, the gravitino (supersymmetric particle of graviton) is nearly massless and is the LSP offering the possibility to study light higgsinos. Typical higgsino signal events are characterized by multiple charged leptons substantial MET, which is a distinct signature used to identify higgsino events. 
+
+The analysis was published in 2018~\cite{Aaboud:2018zeb} and presented at the ICHEP2018 and SUSY2018 conferences.
+Currently, the aim is to publish in Spring 2020 exploiting the entire LHC $pp$ dataset and using new multivariate techniques to extend further the signal sensitivity.
+
+
+\subsection*{Direct production of tau sleptons}
+
+Supersymmetry predicts the existence of sleptons as the superpartners of the SM leptons. Although experimentally challenging, final states with tau leptons originating from stau (the supersymmetric partner of the tau lepton) decays are of particular interest for supersymmetric searches. Models with light staus can lead to a DM relic density consistent with cosmological observations, and light sleptons in general could play a role in the co-annihilation of neutralinos. 
+%Sleptons are expected to have masses of $\mathcal{O}(100~\mathrm{GeV})$ in gauge-mediated and anomaly-mediated supersymmetry breaking models. 
+Searches for the direct production of charginos and neutralinos in final states with hadronically decaying tau leptons are also motivated as they can affect the Higgs decay rate into di-photons and provide a reasonable explanation for the $g-2$ discrepancy between experiment the SM theory.
+
+Until recently, the latest and most stringent limits were set by the Large Electron Positron collider up to stau mass of 90~GeV, while none of the LHC experiments had sensitivity at higher stau mass regimes. The search for stau-pairs is very challenging predominantly due to the low production cross section as an electroweak process in hadron collisions. Despite this fact, complex cut-and-count and machine learning techniques are being developed in order to maximize the  sensitivity for scenarios involving the direct production of stau pairs, as well as their indirect production via the decays of charginos and neutralinos. 
+
+The results of the stau analysis became public in Spring 2019~\cite{ATLAS-CONF-2019-018} and presented at the LHCP2019  and  SUSY2019 conferences. It shows the  first results on upper limits on the stau production cross-section excluding stau masses from 120~GeV to 390~GeV and a massless lightest neutralino.
+A second publication is under preparation, which exploits the entire LHC $pp$ dataset and including all final states of the tau-pair decay.
+
+
+\subsection*{Search for long-lived particles}
+
+Many extensions to the SM predict the production of weakly-coupled particles, which could have decay lengths comparable to the dimensions of the ATLAS detector. Such long-lived particles (LLPs) can decay into a pair of leptons. If their lifetime ranges between pico- to nano-seconds then their decay may be observed as a displaced vertex in the inner tracking volume of ATLAS.
+
+This analysis searches for displaced dilepton vertices originating from decays of LLPs to an
+opposite-charge $\mu\mu$, $ee$, or $e\mu$ pair, with an invariant mass of more than 12 GeV, using data of $pp$ collisions at a center-of-mass energy of 13 TeV recorded by the ATLAS experiment in 2016.
+
+The displaced-vertex analysis was published in 2018~\cite{Aaboud:2017iio} and updated results
+are expected to be published in July 2019. No lepton pairs with an invariant mass greater than 12~GeV are observed, consistent with the background expectations derived from data. Exclusion limits are derived for supersymmetric signal models in which long-lived neutralinos are produced through squark-antisquark production and decay into two charged leptons and one neutrino via R-parity violating couplings.
+
+Currently, the analysis team is taking advantage of the LHC shutdown to analyze the entire LHC $pp$ dataset.
+
+\section*{Presentations at International Conferences}
+
+\noindent\makebox[0pt][r]{2018\quad}\textbf{``Search for supersymmetry in events with four or more leptons in $\sqrt{s}=13$~TeV $pp$ collisions with ATLAS"}
+\begin{itemize}
+	\item 26$^\text{th}$ International Conference on Supersymmetry and Unification of Fundamental Interactions (SUSY2018), 23-27 July 2018, Barcelona,  Spain
+	\item Poster representation on behalf of the ATLAS collaboration%~\cite{Zinonos:2633126}
+	\item Proceedings: \url{https://cds.cern.ch/record/2633126}
+\end{itemize}
+
+
+\noindent\makebox[0pt][r]{2018\quad}\textbf{``Searches for electroweak production of supersymmetric gauginos and sleptons at LHC"}
+\begin{itemize}
+	\item 39$^\text{th}$ International Conference on High Energy Physics (ICHEP2018), Seoul, South Korea, 4-11 July 2018
+	\item Invited LHC overview talk
+	%~\cite{ichep-susy} 
+	\item  Proceedings: \url{https://pos.sissa.it/340/565/pdf}
+\end{itemize}	
+	
+
+\noindent\makebox[0pt][r]{2018\quad}\textbf{``Higgs boson production in decays to two tau leptons using the ATLAS detector"}
+\begin{itemize}
+	\item 39$^\text{th}$ International Conference on High Energy Physics (ICHEP2018), Seoul, South Korea, 4-11 July 2018
+	\item Talk on behalf of the ATLAS collaboration%
+	\item  Proceedings:  \url{https://pos.sissa.it/340/104/pdf},~\cite{Aaboud:2018pen}
+\end{itemize}
+
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{``Searches for electroweak production of supersymmetric gauginos and sleptons with the ATLAS detector"}
+\begin{itemize}
+	\item European Physical Society Conference on High Energy Physics (EPS-HEP2017), Venice, Italy, 5-12 July 2017
+	\item Talk on behalf of the ATLAS collaboration%~\cite{Zinonos:2017smd}
+	\item  Proceedings: \url{https://pos.sissa.it/314/357/pdf}
+\end{itemize}
+
+\section*{Overview Talks at Workshops}
+
+\noindent\makebox[0pt][r]{2019\quad}\textbf{``Multilepton searches"}
+\begin{itemize}
+	\item ATLAS-D Physics Meeting,  Ludwig-Maximilians-Universit\"{a}t Munich, 17-20 September 2019
+	\item Invited ATLAS plenary talk 
+	%~\cite{tera18}
+	\item \url{https://indico.cern.ch/event/811522/timetable/}
+\end{itemize}
+
+
+\noindent\makebox[0pt][r]{2018\quad}\textbf{``Searches for electroweak production of charginos and neutralinos at LHC"}
+\begin{itemize}
+	\item 12$^\text{th}$ Annual Helmholtz Alliance Workshop on Physics at the Terascale, DESY, Hamburg, 26-28 November 2018
+		\item Invited LHC overview talk 
+		%~\cite{tera18}
+	\item \url{https://indico.desy.de/indico/event/21296/session/12/contribution/67/material/slides/0.pdf}
+\end{itemize}
+
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{``Searches for direct production of charginos and neutralinos in final states with tau leptons at LHC"}
+\begin{itemize}
+	\item 11$^\text{th}$ Annual Helmholtz Alliance Workshop on Physics at the Terascale, DESY, Hamburg, 27-29 November 2017
+		\item Invited LHC overview talk  
+		%~\cite{tera17}
+	\item \url{https://indico.desy.de/indico/event/18681/session/3/contribution/138/material/slides/0.pdf}
+\end{itemize}
+
+\section*{Talks at ATLAS Collaboration Workshops}
+
+\noindent\makebox[0pt][r]{2018\quad}\textbf{ATLAS Supersymmetry Workshop}, KTH, Stockholm. Talk: "Tau recommendations for SUSY analyses".\newline
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{ATLAS Week Collaboration Meeting: Data Anew}, CERN, Talk: ``Tau domination anew!".\newline
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{ATLAS Tau Performance and Higgs to Leptons Workshop}, Max Planck Institute for Physics, Munich. Talk: ``Analysis and fitting tools".\newline
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{ATLAS Tau Performance and Higgs to Leptons Workshop}, Max Planck Institute for Physics, Munich. Talk: ``Tau energy scale and tag \& probe measurements".\newline
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{ATLAS Exotics and SUSY Joint Workshop}, Bucharest, Romania. Talk: ``Online and offline tau combined performance reports".\newline
+
+\section*{Workshop Organization}
+
+\noindent\makebox[0pt][r]{2019\quad}\textbf{ATLAS Four-Lepton SUSY Workshop}
+\begin{itemize}
+	\item Max Planck Institute for Physics in Munich (16-17 January, 2019)
+	\item \url{https://indico.mpp.mpg.de/event/6190/}
+\end{itemize}
+
+
+\noindent\makebox[0pt][r]{2017\quad}\textbf{ATLAS Tau and Higgs to Leptons Annual Workshop}
+\begin{itemize}
+	\item Max Planck Institute for Physics in Munich (23-27 October, 2017)
+	\item \url{https://indico.cern.ch/event/636010/}
+\end{itemize}
+
+\section*{Teaching at the TUM Physics Department} 
+
+\noindent \textbf{Graduate-level course:} Tests of the Standard Model of Elementary Particle Physics I
+\begin{itemize}
+	\item Wahlpflichtfach Kern-, Teilchen- und Astrophysik
+	\item Lectures: 
+	\begin{enumerate}
+		\item Winter semester 2017/18 (100\%) 
+		\item Winter semester 2018/19 (50\%)
+	\end{enumerate}
+	\item  Tutorials: 
+	\begin{enumerate}
+		\item Winter semester 2016/17 (100\%)
+		\item Winter semester 2017/18 (100\%)
+		\item Winter semester 2018/19 (100\%)
+	\end{enumerate}
+	
+\end{itemize}
+
+
+\noindent \textbf{Graduate-level course:} Tests the Standard Model of Elementary Particle Physics II
+\begin{itemize}
+	\item Wahlpflichtfach Kern-, Teilchen- und Astrophysik
+	\item Lectures: 
+	\begin{enumerate}
+		\item Summer semester 2018 (100 \%)
+	\end{enumerate}
+	\item Tutorials:
+	\begin{enumerate}
+		\item Summer semester 2017 (100 \%)
+		\item Summer semester 2018 (100 \%)
+		\item Summer semester 2019 (100 \%)
+	\end{enumerate}
+	
+	 
+\end{itemize}
+
+\noindent \textbf{Lecture material}: 27 lecture handouts ($\sim 50$ pages each) and 27 exercise sheets for both course modules
+\begin{itemize}
+	\item Website: \url{https://www.mpp.mpg.de/~zinonos/index.html}
+\end{itemize}
+
+
+\noindent \textbf{Seminar  ``Physics at the Large Hadron Collider"}
+\begin{itemize}
+	\item Supervision of student talks: WS 2016/17, 2017/18, 2018/19 \& SS 2017, 2018, 2019
+\end{itemize}
+
+\noindent
+
+
+\section*{Supervision of Theses at TUM}
+
+\subsubsection*{Ph.D. Theses}
+\begin{enumerate}
+	\item 
+	Marian Rendel, ``Search for supersymmetry in events with many leptons and jets in collisions with the ATLAS detector'' (since August 2018)
+\item
+	Johannes Josef Junggeburth, ``Search for supersymmetry in events with four or more leptons in collisions with the ATLAS detector'' (since February 2016)
+\item
+	Dominik Krauss, ``Search for long-lived particles decaying to opposite-charge
+	leptons in $pp$ collisions at $\sqrt{s} = 13$~TeV with the ATLAS detector'' (April 2015 - June 2019)
+\end{enumerate}
+
+
+\subsubsection*{Master Theses}
+\begin{enumerate}
+	\item
+	Patrick Selle, ``Search for supersymmetry in events with tau leptons and missing transverse energy in proton-proton collisions at $\sqrt{s}=13$~TeV with the ATLAS detector at LHC" (May 2018 - May 2019)
+\item
+	Marian Rendel, ``Search for Supersymmetry in multileptonic final states with collimated $\tau$ lepton pairs with the ATLAS detector at the LHC" (October 2016 - April 2018)
+\item
+	 Stefan Maschek, ``Study of R-parity violating decays of supersymmetric particles with the ATLAS
+	detector at the LHC" (March 2016 - March 2017)
+\end{enumerate}
+
+\subsubsection*{Bachelor Theses}
+\begin{enumerate}
+	\item 
+	 Philipp Haas, ``Searching for charginos and neutralinos decaying into Wh in the di-tau final state with the ATLAS detector" (since May 2019)
+	\item 
+	Marvin Pfaff, ``Study of the efficiency of sMDT chambers" (March 2019 - July 2019)
+\item
+	Johannes Hessler, ``Study of the spatial resolution of sMDT chambers" (March 2019 - August 2019)
+\item
+	Justin Skorupa, ``Tau lepton trigger studies for the search of stau particles with the ATLAS Detector'' (October 2018 - May 2019)
+\item
+	Florian Henkes, ``Estimation of the $t\bar{t}Z$ background in 4-lepton events using a data-driven approach from $t\bar{t}\gamma$ events'' (October 2018 - May 2019)
+\item
+	Iris Hydi, ``Application of Neural Networks for the search of supersymmetry in events with tau-lepton pairs with the ATLAS Detector'' (March 2018 - November 2018)
+\end{enumerate}
+
+
+
+
+\section*{Publications}
+
+%\nocite{*}
+\printbibliography[heading=none]
+
+\end{document}

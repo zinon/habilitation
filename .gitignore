@@ -1,0 +1,11 @@
+*-blx.bib
+*.bbl
+*.log
+*.xml
+*.aux
+*.bcf
+*.blg
+*.out
+*.gz
+*.html
+*~
