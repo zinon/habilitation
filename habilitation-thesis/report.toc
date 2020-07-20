@@ -4,58 +4,118 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation for Supersymmetry}{7}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Minimal Supersymmetric Standard Model}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Minimal Supersymmetric Extension of the Standard Model}{9}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}R-Parity}{10}{section.1.3}%
+\contentsline {subsection}{\numberline {1.2.1}Minimal Supersymmetric Standard Model}{9}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Phenomenology of Supersymmetry}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.2.2}Charginos and Neutralinos}{10}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Experimental Search Program for SUSY}{12}{section.1.5}%
+\contentsline {subsection}{\numberline {1.2.3}Squarks and Gluinos}{11}{subsection.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Scope of Thesis}{13}{section.1.6}%
+\contentsline {subsection}{\numberline {1.2.4}Sleptons}{11}{subsection.1.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}ATLAS Detector}{17}{chapter.2}%
+\contentsline {section}{\numberline {1.3}R-Parity}{11}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Coordinate System}{18}{section.2.1}%
+\contentsline {section}{\numberline {1.4}Naturalness and Light Higgsinos}{13}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Inner Detector}{18}{section.2.2}%
+\contentsline {section}{\numberline {1.5}Phenomenology of Supersymmetry}{14}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Calorimeters}{18}{section.2.3}%
+\contentsline {section}{\numberline {1.6}Experimental Search Program for SUSY}{15}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Muon Spectrometer}{19}{section.2.4}%
+\contentsline {section}{\numberline {1.7}Scope of Thesis}{16}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Trigger System}{20}{section.2.5}%
+\contentsline {chapter}{\numberline {2}ATLAS Detector}{19}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Luminosity}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.1}Coordinate System}{21}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Searches and Methodology}{23}{chapter.3}%
+\contentsline {section}{\numberline {2.2}Inner Detector}{21}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Search for SUSY in multileptonic final states}{23}{section.3.1}%
+\contentsline {section}{\numberline {2.3}Calorimeters}{21}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Motivation}{23}{subsection.3.1.1}%
+\contentsline {section}{\numberline {2.4}Muon Spectrometer}{22}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Scenarios}{24}{subsection.3.1.2}%
+\contentsline {section}{\numberline {2.5}Trigger System}{23}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Methodology}{27}{subsection.3.1.3}%
+\contentsline {section}{\numberline {2.6}Luminosity}{23}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Results}{28}{subsection.3.1.4}%
+\contentsline {chapter}{\numberline {3}Searches and Methodology}{25}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Conclusions}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Particle Reconstruction Techniques}{25}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Search for direct stau lepton production}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1.1}Primary Vertex}{25}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Motivation}{33}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.1.2}Electrons}{25}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Methodology}{35}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.1.3}Muons}{25}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Results}{36}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.1.4}Signal Charged Leptons}{26}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Conclusions}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.1.5}Taus}{27}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Synopsis}{39}{chapter.4}%
+\contentsline {subsection}{\numberline {3.1.6}Jets}{30}{subsection.3.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Summary}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {3.1.7}Missing Transverse Energy}{31}{subsection.3.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Outlook}{40}{section.4.2}%
+\contentsline {section}{\numberline {3.2}Search for SUSY in Multileptonic Final States}{31}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Appendix}{51}{chapter.5}%
+\contentsline {subsection}{\numberline {3.2.1}Motivation}{31}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Scenarios}{32}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{R-Parity Violating Processes}{32}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{R-Parity Conserving Processes}{33}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Methodology}{34}{subsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Event categorization strategy}{34}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Trigger Strategy}{36}{section*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Signal regions}{38}{section*.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Background processes}{39}{section*.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Irreducible background estimate}{39}{section*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Systematic uncertainties}{42}{section*.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}Results}{42}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.5}Comparison with CMS}{47}{subsection.3.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.6}Conclusions}{49}{subsection.3.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Search for direct stau lepton production}{50}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Motivation}{50}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Methodology}{52}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Backgrounds}{53}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Systematic uncertainties}{54}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Results}{55}{subsection.3.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}Comparison with CMS}{55}{subsection.3.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.7}Conclusions}{56}{subsection.3.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Synopsis}{61}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Summary}{61}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Prospects}{62}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Ditau Reconstruction for Four-lepton Searches}{62}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Multivariate Analysis for Stau Searches}{64}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Stau Searches at HL-LHC}{69}{subsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Outlook}{72}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Appendix A}{83}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Appendix B}{85}{chapter.6}%
