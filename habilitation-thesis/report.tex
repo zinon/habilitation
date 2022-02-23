@@ -12,11 +12,22 @@
 
 \usepackage{doi}
 %\usepackage[style=trad-plain]{biblatex}
-\usepackage[backend=bibtex, sorting=none, style=numeric-comp]{biblatex}
+\usepackage[style=trad-plain, backend=bibtex, sorting=none, style=numeric-comp]{biblatex}
+%\usepackage[backend=biber, style=numeric-comp, sorting=none, isbn=false, issn=false, doi=false]{biblatex}
+%\usepackage[doi=false,isbn=false,url=false,eprint=true]{biblatex}
+
+\renewbibmacro{in:}{}
+
+
+%To omit the page prefix for all citations, add the following to your preamble:
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+\DeclareFieldFormat{pages}{#1}% no prefix for the pages field in the bibliography
+
 \addbibresource{report.bib}
-\DeclareDatamodelFields[type=field,datatype=literal]{mynote}
-\usepackage{xpatch}
-\xapptobibmacro{finentry}{\par\printfield{mynote}}{}{}
+%\DeclareDatamodelFields[type=field,datatype=literal]{mynote}
+%\usepackage{xpatch}
+%\xapptobibmacro{finentry}{\par\printfield{mynote}}{}{}
 
 
 %\usepackage{lineno}
@@ -37,6 +48,7 @@
 	\newpage}
 
 \begin{document}
+	
 \begin{titlepage}
 	\begin{center}
 		\vspace*{1cm}
@@ -76,7 +88,7 @@ Technischen Universit\"{a}t M\"{u}nchen} \newline
 		\vfill
 		
 		
-		M\"{u}nchen, 2020
+		M\"{u}nchen, 2017-2021
 		
 		\vspace{0.8cm}
 
@@ -91,7 +103,8 @@ Technischen Universit\"{a}t M\"{u}nchen} \newline
 
 \vspace*{\fill}
 \noindent
-Habilitation Thesis "Search for Supersymmetry with the ATLAS detector at the LHC".\newline
+{\bf Habilitation Thesis} \newline
+"Search for Supersymmetry with the ATLAS detector at the LHC".\newline
 
 \noindent
 Experimental High Energy and Particle Physics.\newline
@@ -100,14 +113,19 @@ Experimental High Energy and Particle Physics.\newline
 Max-Planck-Institut f\"{u}r Physik \& Technischen Universit\"{a}t M\"{u}nchen.\newline
 
 \noindent
-M\"{u}nchen, 2017-2019.\newline
+M\"{u}nchen, 2017-2021.\newline
 
 \noindent
 Defended on December 12, 2019.\newline
 
 \noindent
-Submitted in March, 2020. Updated in July, 2020.
+Submitted for reviewing in March, 2020.\newline
 
+\noindent
+Updated in November, 2021.\newline
+
+\noindent
+Final submission in February, 2022.\newline
 
 \vspace{1cm}
 \noindent
@@ -118,7 +136,7 @@ Mentoring committee:
 	\item 	Prof. Dr. Gregor Herten (Universit\"{a}t Freiburg, \textbf{Member})
 \end{itemize}
 %	\addcontentsline{toc}{section}{Acknowledgements}
-\newpage
+
 
 
 \section*{Acknowledgements}
@@ -263,9 +281,10 @@ The superpartners of the top and bottom quark can be separated from the lighter 
 Squarks can be produced through strong interactions and therefore are easily produced at hadron colliders such as the LHC. 
 They decay to quarks and neutralinos or charginos which can further decay. 
 
-Gluinos are Majorana fermionic partners of the gluon, which means that they are their own antiparticles. 
-They interact strongly and therefore can be produced significantly at the LHC. 
-They can only decay to a quark and a squark. Also, gluinos can decay to either a quark + anti-squark or an anti-quark + squark with equal probability.
+Gluinos are Majorana fermionic partners of the gluon, which means that they are their own antiparticles. They interact strongly and therefore can be produced significantly at the LHC. 
+The decay of the gluino can only proceed through a squark, either on-shell or virtual.
+In case of two-body, gluino decays to quark-squark pairs they will dominate as the relevant gluino-quark-squark coupling has QCD strength. If the the top and bottom squarks are lighter than all of the other squarks, it is possible that gluino decays to either top-stop or bottom-sbottom are the only available two-body decay modes, in which case they will dominate over all others.
+If instead all of the squarks are heavier than the gluino, the gluino will decay only through off-shell squarks giving rise to 3-body decays involving neutralinos and charginos, i.e. $\tilde{g} \to qq\; \tilde{\chi}_i^0$ or $q^\prime q\; \tilde{\chi}_i^\pm$.
 
 \subsection{Sleptons}
 
@@ -601,7 +620,7 @@ $Z \to \mu^+\mu^-$ events.
  The $J/\psi$ sample covers the low transverse momentum range $4.5 < \pt < 15$~GeV, 
  while the Z boson sample extends the measurement up to 110 GeV.
 
-Figure~\ref{fig:muon-eff} shows the muon reconstruction efficiency as a function of $\pt$ is shown for Medium muons. 
+Figure~\ref{fig:muon-eff} shows the muon reconstruction efficiency as a function of $\pt$ for Medium muons measured with $33.3~\text{fb}^{-1}$ of $pp$ data at $\sqrt{s}=13~$TeV.
 The plot displays the high reconstruction efficiency across a broad $\pt$ spectrum and the good agreement between data and MC.
 \begin{figure}[t]
 	\centering
@@ -613,8 +632,8 @@ The plot displays the high reconstruction efficiency across a broad $\pt$ spectr
 
 
 Specifically for the searches described in this thesis, preselected muons are required to have $|\eta| < 2.7$ and $\pt > 5$~GeV. 
-Muons must satisfy Medium identification requirements based on the number of hits in the different ID and MS subsystems, 
-and the significance of the charge-to-momentum ratio \cite{Aad_2016_muon}. 
+Muons must satisfy Medium identification requirements based on the number of hits in the different ID and MS subsystems, and the $q/p$ significance. The latter is defined as the absolute value of the difference between the ratio of the charge and momentum of the muons measured in the ID and MS divided by the sum in quadrature of the corresponding uncertainties~\cite{Aad_2016_muon}.
+
 Events containing one or more muons that have a transverse impact parameter relative to the primary vertex $|d_0 | > 0.2$~mm 
 or a longitudinal impact parameter relative to the primary vertex $|z_0 | > 1$~mm are rejected to suppress the cosmic-ray muon background.
 
@@ -726,7 +745,7 @@ Three-dimensional calorimeter energy clusters are used as input to the jet recon
 following Ref.~\cite{ATL-PHYS-PUB-2015-015}. 
 Jets must be reconstructed in the barrel region $|\eta| < 2.8$ and have $\pt > 20$~GeV. 
 To reduce pileup effects, jets with $\pt < 60$~GeV and $|\eta| < 2.4$ must satisfy additional criteria using the jet vertex tagging algorithm described
-in Ref.~\cite{collaboration2015performance}. 
+in Ref.~\cite{ATLAS:2015ull}. 
 Events containing jets failing to satisfy the quality criteria described in Ref.~\cite{ATL-PHYS-PUB-2015-015} are rejected
 to suppress events with large calorimeter noise or non-collision backgrounds.
 
@@ -954,7 +973,7 @@ All signal regions deployed in the search are diagrammatically shown by Figure~\
 \subsubsection{Background processes}
 In general, the search of SUSY processes with four leptons in the final state suffers less by background processes as the known SM four-lepton processes are few with very 
 low production cross-section. Nevertheless, several SM processes can result in signatures resembling SUSY signals with four reconstructed charged
-leptons, including both the "real" and "fake" lepton contributions.
+leptons, including both the ``real" and ``fake" lepton contributions.
 In this search, a real charged lepton is defined to be a prompt (i.e. not stemming from a secondary particle decay) 
 and genuinely isolated lepton (i.e. no track activity in the nearby phase-space of $\Delta R < 0.2$).
 A fake charged lepton is defined to be a non-prompt or non-isolated lepton that could originate from any of the following:
@@ -991,18 +1010,18 @@ The irreducible backgrounds are estimated from Monte Carlo (MC) simulation, whil
 	\caption{Example processes for irreducible (left) and reducible (right) backgrounds of the four-lepton SUSY search.}\label{fig:bkg}
 \end{figure}
 
-\subsubsection{Irreducible background estimate}
+\subsubsection{Reducible background estimate}
 
 As mention before, the definition of reducible background in this analysis is any signal-like event that includes at least one lepton that does not arise from the prompt decay of a $W^\pm$ boson, Z boson, top quark or a Higgs boson, or, of course, a SUSY particle.
 The dominant reducible backgrounds in the signal regions are $t\bar{t}$ and Z+jets processes.
 
-The technique for estimating the irreducible background relies on the introduction of control regions for each signal region that have identical kinematic selection criteria, but inverted selection criteria on one or two of the reconstructed leptons:
+The technique for estimating the reducible background relies on the introduction of control regions for each signal region that have identical kinematic selection criteria, but inverted selection criteria on one or two of the reconstructed leptons:
 \begin{description}
 	\item[SR:] Four or more signal leptons, any number of loose leptons,
 	\item[CR1:] Exactly three signal leptons, at least one loose lepton,
 	\item[CR2:] Exactly two signal leptons, at least two loose leptons,
 \end{description}
-where the irreducible background composition is calculated for each region separately.
+where the reducible background composition is calculated for each region separately.
 Specifically, ``loose" leptons are leptons surviving the geometrical overlap removal with respect to other reconstructed particles in the event, but do not satisfy signal lepton criteria. 
 
 Subsequently, in the fake-factor method, the number of reducible background events in a given region is estimated from data using probabilities for a fake charged lepton ($e$, $\mu$ and hadronically decaying tau leptons) to pass or fail the signal lepton selection. 
@@ -1135,7 +1154,7 @@ excluded at 95\% confidence level (CL) if the $\mathrm{CL}_\mathrm{s}$ of the si
 hypothesis are also calculated for each signal region.
 
 The number of observed events in each signal region is used to set exclusion limits in the SUSY models, where the statistical combination of all disjoint signal regions is used. 
-Since SR0A and SR0B are overlapping signal regions, the one with the better expected exclusion is used in the combination. For the exclusion limits, the observed and expected 95\% CL limits are calculated by performing pseudo-experiments for each SUSY model point, taking into account the theoretical and experimental uncertainties in the SM background and the experimental uncertainties in the signal. For all expected and observed exclusion limit contours, the $\pm 1 \sigma_\mathrm{exp}$  uncertainty band indicates the impact on the expected limit of the systematic and statistical uncertainties included in the fit. The $\pm 1 \sigma_\mathrm{theory}^\mathrm{SUSY}$ uncertainty lines around the observed limit illustrate the change in the observed limit as the nominal signal cross section is scaled up and down by the theoretical cross section uncertainty.
+Since SR0A and SR0B are overlapping signal regions, the one with the better expected exclusion is used in the combination. For the exclusion limits, the observed and expected 95\% CL limits are calculated by performing pseudo-experiments for each SUSY model point, taking into account the theoretical and experimental uncertainties in the SM background and the experimental uncertainties in the signal. For all expected and observed exclusion limit contours, the $\pm 1 ~\sigma_\mathrm{exp}$  uncertainty band indicates the impact on the expected limit of the systematic and statistical uncertainties included in the fit. The $\pm 1 ~\sigma_\mathrm{theory}^\mathrm{SUSY}$ uncertainty lines around the observed limit illustrate the change in the observed limit as the nominal signal cross section is scaled up and down by the theoretical cross section uncertainty.
 
 
 \begin{figure}[t]
@@ -1162,7 +1181,7 @@ Since SR0A and SR0B are overlapping signal regions, the one with the better expe
  \end{subfigure}
  \caption{Expected (dashed) and observed (solid) 95\% CL exclusion limits on the SUSY RPV models considered in the analysis. The limits are set using the statistical combination of disjoint signal regions. Where the signal regions are not mutually exclusive, the observed $\mathrm{CL}_s$ value is taken from the signal region with the better expected $\mathrm{CL}_s$  value~\cite{Aaboud:2018zeb}. }\label{fig:RPV-limits}
 \end{figure}
-Figure~\ref{fig:RPV-limits} shows the exclusion contours for the RPV models considered in the search. The exclusion limits in the RPV models extend to high masses due to the high lepton multiplicity in these scenarios and the high efficiency of the $m_\mathrm{eff}$ selections. Wino-like $\tilde{\chi}_1^\pm/\tilde{\chi}_2^0$, slepton/sneutrino and gluino masses  up to 1.46 TeV, 1.06 GeV, and 2.25 TeV are excluded, respectively.
+Figure~\ref{fig:RPV-limits} shows the exclusion contours for the RPV models considered in the search. The exclusion limits in the RPV models extend to high masses due to the high lepton multiplicity in these scenarios and the high efficiency of the $m_\mathrm{eff}$ selections. Wino-like $\tilde{\chi}_1^\pm/\tilde{\chi}_2^0$, slepton/sneutrino and gluino masses  up to $1.46$~TeV, $1.06$~TeV, and $2.25$~TeV are excluded, respectively.
 
 The results are also interpreted in simplified higgsino GGM models, where higgsino-like $\tilde{\chi}_1^\pm/\tilde{\chi}_2^0/\tilde{\chi}_1^0$ masses up to 295 GeV are excluded in scenarios with a 100\% branching ratio for $\tilde{\chi}_1^0$ decay to a Z boson and a gravitino (Figure~\ref{fig:RPC-limits}).
 \begin{figure}[htbp]
@@ -1274,8 +1293,10 @@ be too abundant to explain the astrophysical measurements.}
 At the CERN LHC, 
 the ATLAS~\cite{Aad:2014yka, Aad:2015eda} and 
 CMS~\cite{Khachatryan:2016trj, Khachatryan:2015kxa, Sirunyan:2018vig}
-collaborations have both performed searches for direct and indirect stau production with 8 TeV and 13 TeV center-of-mass energy LHC data.  The CMS collaboration has reported for a degenerate production scenario, in which both left- and right-handed $\tilde{\tau}$ pairs are produced, exclusions of $\tilde{\tau}$ masses up to 150 GeV when assuming a nearly massless neutralino~\cite{CMS-PAS-SUS-18-006}.
-The ATLAS collaboration has shown results of a search for SUSY in final states with $\tau$ leptons, probing indirect $\tilde{\tau}$ production in models of chargino-neutralino and chargino pair production, using data collected at $\sqrt{s} = 13$~TeV~\cite{Aaboud:2017nhr, Aad:2019byo}. Finally, ATLAS  released in 2019 results of the indirect stau search analysis showing the  first results on upper limits on the $\tilde{\tau}$ production cross-section excluding stau masses from 120~GeV to 390~GeV and a massless lightest neutralino~\cite{Aad:2019byo, ATLAS-CONF-2019-018}. 
+collaborations have both performed searches for direct and indirect stau production with 8 TeV and 13 TeV center-of-mass energy LHC data.  
+At 8 TeV center-of-mass energy, ATLAS had no sensitivity to the direct stau-pair production due to the very low low cross-section of the process.
+At 13 TeV center-of-mass energy, the CMS collaboration has reported for a degenerate production scenario, in which both left- and right-handed $\tilde{\tau}$ pairs are produced, exclusions of $\tilde{\tau}$ masses up to 150 GeV when assuming a nearly massless neutralino~\cite{CMS:2019eln}.
+The ATLAS collaboration has shown results of a search for SUSY in final states with $\tau$ leptons, probing indirect $\tilde{\tau}$ production in models of chargino-neutralino and chargino pair production, using data collected at $\sqrt{s} = 13$~TeV~\cite{Aaboud:2017nhr}. Finally, ATLAS  released in 2019 results of the indirect stau search analysis showing the  first results on upper limits on the $\tilde{\tau}$ production cross-section excluding stau masses from 120~GeV to 390~GeV and a massless lightest neutralino~\cite{ATLAS:2019gti}. 
 
 The search for stau-pairs is very challenging predominantly due to the low production cross section as an electroweak process in hadron collisions (see Figure~\ref{fig:xsec1}). Despite this fact, complex cut-and-count and machine learning techniques are developed to maximize the  sensitivity for scenarios involving the direct production of stau pairs, as well as their indirect production via the decays of charginos and neutralinos.  In this thesis, simplified SUSY models~\cite{PhysRevD.79.075020, PhysRevD.79.015005, Alves_2012} are examined, in which the $\tilde{\tau}$ can be produced directly through pair production, as shown in Figure~\ref{fig:staustau-tautaun1n1}.
 The lightest neutralino is the LSP and purely bino, and the two charged staus are assumed to be mass-degenerated. The left- and right-handed staus are assumed to decay with a 100\% branching fraction to a bino-like neutralino, $\tilde{\tau}^\pm_{\mathrm{L},\;\mathrm{R}}  \to \tau^\pm\; \tilde{\chi}_1^0$, whereas all sparticles other than those explicitly mentioned here are assumed to be inaccessible at the LHC energy.
@@ -1363,7 +1384,7 @@ In both signal regions, observations and background predictions are found to be 
 		The stacked histograms show the expected SM backgrounds.
 		The hatched bands represent the sum in quadrature of systematic and statistical uncertainties of the total SM background. 
 		For illustration, the distributions from SUSY reference points differing by stau mass are also shown as dashed lines. 
-		The last bin includes the overflow events. Adapted from Ref.~\cite{Aad:2019byo}. }\label{fig:stau-distr}
+		The last bin includes the overflow events. Adapted from Ref.~\cite{ATLAS:2019gti}. }\label{fig:stau-distr}
 \end{figure}
 
 In the absence of a significant excess over the expected SM background, the observed and expected numbers
@@ -1382,7 +1403,7 @@ The exclusion limits are shown in the plane of the lightest supersymmetric neutr
 	\begin{subfigure}[b]{0.7\textwidth}
 		\includegraphics[width=\textwidth]{figs/atlas-ml} \caption{Slepton exlcusion limits}\label{fig:atlas-ml}	
 	\end{subfigure}
-	\caption{Plot~\ref{fig:stau-limits-atlas}: The 95\% CL exclusion contours for the combined fit of low-mass and high-mass signal regions for simplified models with combined production. The solid (dashed) lines show the observed (expected) exclusion contours. The band around the expected limit shows the $\pm 1~\sigma$ variations, including all uncertainties except theoretical uncertainties in the signal cross section. The dotted lines around the observed limit indicate  the sensitivity to $\pm 1~\sigma$ variations of the theoretical uncertainties in the signal cross section~\cite{ATLAS-CONF-2019-018, Aad:2019byo}. 
+	\caption{Plot~\ref{fig:stau-limits-atlas}: The 95\% CL exclusion contours for the combined fit of low-mass and high-mass signal regions for simplified models with combined production. The solid (dashed) lines show the observed (expected) exclusion contours. The band around the expected limit shows the $\pm 1~\sigma$ variations, including all uncertainties except theoretical uncertainties in the signal cross section. The dotted lines around the observed limit indicate  the sensitivity to $\pm 1~\sigma$ variations of the theoretical uncertainties in the signal cross section~\cite{ATLAS-CONF-2019-018, ATLAS:2019gti}. 
 		%
 	Plot~\ref{fig:atlas-ml}: Exclusion limits at 95\% CL based on 13 TeV data in the (slepton, lightest neutralino) mass plane for different analyses probing the direct production of sleptons with decays to lepton neutralino. The types of sleptons (flavor and coupling) included in each search is specified in the legend~\cite{ATL-PHYS-PUB-2019-022}.	
 }\label{fig:stau-results}
@@ -1392,7 +1413,7 @@ The exclusion limits are shown in the plane of the lightest supersymmetric neutr
 
 \subsection{Comparison with CMS}
 
-In Ref.~\cite{CMS-PAS-SUS-18-006}, CMS presents a search for direct tau slepton pair production using data from proton-proton collisions at a center-of-mass energy of 13 TeV. Events are selected by requiring a tau lepton pair and significant missing transverse momentum. 
+In Ref.~\cite{CMS:2019hos}, CMS presents a search for direct tau slepton pair production using data from proton-proton collisions at a center-of-mass energy of 13 TeV. Events are selected by requiring a tau lepton pair and significant missing transverse momentum. 
 CMS defines search regions using various kinematic observables that exploit expected differences in discriminants between signal and background. 
 The data used for this search correspond to an integrated luminosity of $77.2~\mathrm{fb}^{-1}$ collected in 2016 and 2017, which amount about the half of the data that ATLAS uses for the respective analysis.
 
@@ -1405,7 +1426,7 @@ under the assumption of a nearly massless neutralino.
 	\includegraphics[width=0.8\linewidth]{figs/CMS-SUS-18-006-stau.png}
 	\caption{Upper limit on the cross section of stau-pair production excluded at 95\% CL as a function of the stau mass in degenerate stau models 
 		for a $\tilde{\chi}_1^0$ mass of 1~GeV. 
-		The results shown are for the statistical combination of the 2016 and 2017 CMS data in the lepton-hadron and hadron-hadron ditau final states~\cite{CMS-PAS-SUS-18-006}.}\label{fig:CMS-SUS-18-006-stau}
+		The results shown are for the statistical combination of the 2016 and 2017 CMS data in the lepton-hadron and hadron-hadron ditau final states~\cite{CMS:2019hos}.}\label{fig:CMS-SUS-18-006-stau}
 \end{figure}
 
 
@@ -1430,7 +1451,7 @@ and make it consistent with observations from cosmological measurements.
 
 Searches for stau-pair production in events with at least two hadronically decaying $\tau$-leptons and missing
 transverse momentum were performed using $139~\mathrm{fb}^{-1}$ of $pp$ collision data at $\sqrt{s} = 13$~TeV recorded with
-the ATLAS detector at the LHC~\cite{ATLAS-CONF-2019-018, Aad:2019byo}.
+the ATLAS detector at the LHC~\cite{ATLAS-CONF-2019-018, ATLAS:2019gti}.
 Search regions are defined using kinematic observables that exploit expected differences in discriminants between signal and background.
 Agreement between data and SM predictions is observed in all optimized signal regions. 
 The results are, therefore, used to set upper limits on the visible cross section for events beyond the SM in each signal region.
@@ -1467,7 +1488,7 @@ Overall, both sets of results place strong constraints on important supersymmetr
 
 Due to the low SM background, the search for four-lepton final states provides excellent sensitivity to R-parity violating SUSY models,
 where the LSP, produced in pairs, decays into final states with at least two charged leptons. 
-For LSP decays into hadronically decaying $\tau$ lepton pairs, however, the current analysis is not sensitive if the mass difference between LSP and the next heavier NLSP is large. This is because the $\tau$ jets become highly collimated and the standard $\tau$ reconstruction algorithm is not able to resolve them.
+For LSP decays into hadronically decaying $\tau$ lepton pairs, however, the current analysis is not sensitive if the mass difference between LSP and the next heavier NLSP is large. This is because the $\tau$ jets become highly collimated and the standard $\tau$ reconstruction algorithm is not able to resolve them. An example of collimated hadronic di-tau decays is shown in Figure~\ref{fig:ditau--dr}, which presents the $\Delta R$ distribution of the the two taus at truth level.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figs/ditau--dr}
@@ -1529,7 +1550,7 @@ W bosons can decay into a charged light lepton and neutrino with the emission of
 
 
 To achieve the desired discrimination between signal and background, 
-a multivariate analysis was developed in parallel to the efforts of the ATLAS stau analysis with two hadronically decaying taus.
+a multivariate analysis was developed in parallel to the efforts of the ATLAS stau analysis with two hadronically decaying taus (Figure~\ref{fig:stau-training}).
 The data used in this search are selected through triggers that require the presence of isolated electrons and muons.
 For the $\tau_\mu \tau_h$ final state, the trigger is based on the presence of an isolated muon with $\pT > 20$~GeV in 2015, $\pT > 24$~GeV in early 2016 and $\pT > 26$~GeV for the rest of the data taking period. For electrons, a combination of triggers with $\pt>24,\,26,\, 60,\, 140$~GeV is used across the entire 2015-2018 dataset.
 
@@ -1567,13 +1588,13 @@ performance of the BDT were kept. The most discriminating variables are found th
 \begin{figure}[tbhp]
 	\centering
 	\begin{subfigure}{0.7\textwidth}
-		\includegraphics[width=\textwidth]{figs/bdt.png}
+		\includegraphics[width=\textwidth]{figs/bdt-wip.png}
 		\caption{BDT scores}
 		\label{fig:bdt-up}
 	\end{subfigure}
 	~ 
 	\begin{subfigure}{0.7\textwidth}
-		\includegraphics[width=\textwidth]{figs/roc.png}
+		\includegraphics[width=\textwidth]{figs/roc-wip.png}
 		\caption{ROC curves}
 		\label{fig:roc-down}
 	\end{subfigure}
@@ -1583,12 +1604,12 @@ performance of the BDT were kept. The most discriminating variables are found th
 		The number in brackets indicate the ROC-AUC.
 		The distribution of events (\ref{fig:bdt-up}) from the training sample for background and signal processes are shown as blue and red hatched areas, respectively.
 		The test samples are shown as data points. The $\chi^2$ test serves as a similarity test between the training and testing datasets during the BDT training session and helps to control possible overfitting effects. 
-	}\label{fig:training}
+	}\label{fig:stau-training}
 \end{figure}
 
 
 
-After training the classification algorithm, the BDT output in the two analysis categories provides the final discrimination. 
+After training the classification algorithm, the BDT output in the two analysis categories provides the final discrimination. Figure~\ref{fig:stau-bdt} shows the distribution of the BDT output for signal and background events, as well as for data.
 The BDT score distributions for signal and background events are used to build a statistical model for each channel and category.
 A maximum-likelihood fit is performed on all categories simultaneously assuming Asimov statistics, i.e. the observed data are set to the total measured background.
 The signal strength, $\mu$, defined as the ratio of the measured signal yield to the Standard Model expectation is conditionally set to 1, allowing to measure the
@@ -1605,13 +1626,13 @@ where $\hat{\mu}$  and  $\hat{\vec{\theta}}$ are the parameters that maximize th
 and $\hat{\hat{\vec{\theta}}}$ are the nuisance parameter values that maximize the likelihood for a given $\mu$ ($\mu=1$ in the case of an Asimov model).
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{figs/stau-bdt}
+	\includegraphics[width=0.8\linewidth]{figs/stau-bdt-wip}
 	\caption{Preliminary results on the distributions of the BDT discriminant for signal ($m_{\tilde{\tau}}=200$~GeV and $m_{\tilde{\chi}_1^0}=1$~GeV) and background events in the 0-jet category. 	The post-fit error includes all statistical and statistical uncertainties.
 	The W+jets and top-related background events are simultaneously constrained though their normalization factors connected to the respective control regions.
 The excess of events, above the background, shown by a solid red area corresponds to stau-pair signal events.  }
 	\label{fig:stau-bdt}
 \end{figure}
-With the Asimov asymptotic testing, the expected significance is found to be $1.0~\sigma$ with full uncertainties, $2.0~\sigma$ without uncertainties and $1.6~\sigma$ with all uncertainties but excluding the so-called $\gamma$ factors which parametrize the statistical uncertainty per BDT bin in the statistical model.
+With the Asimov asymptotic testing, the expected significance for the benchmark direct stau scenario with $m_{\tilde{\tau}}=200$~GeV and $m_{\tilde{\chi}_1^0}=1$~GeV is found to be $1.0~\sigma$ including all systematic uncertainties, $2.0~\sigma$ without any uncertainties and $1.6~\sigma$ with all uncertainties but excluding the so-called $\gamma$ statistical factors which parameterize the statistical uncertainty per BDT bin in the statistical model.
 
 Despite the low significance of the lepton-hadron channel alone, it is expected that the statistical combination of the lepton-hadron and hadron-hadron channels together will further extend the analysis sensitivity particularly in the compressed zone (small mass differences between the LSP and the stau masses). 
 The hadron-hadron channels is currently insensitive in the compressed area mainly due to the high $\pt$ cuts on the the tau candidates, as the di-tau triggers used by
@@ -1659,25 +1680,23 @@ between the $\tilde{\tau}$ and $\tilde{\chi}_1^0$. Each SR is identified by the 
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figs/hl-lhc-stau}
+	\includegraphics[width=0.75\linewidth]{figs/hl-lhc-stau}
 	\caption{The 95\% CL exclusion and discovery potential for direct stau production at the HL-LHC ($3000~\mathrm{fb}^{-1}$ at $\sqrt{s} = 14$~TeV), 
-		assuming $\tilde{\tau}_L \tilde{\tau}_L$, $\tilde{\tau}_L \tilde{\tau}_R$ and $\tilde{\tau}_R \tilde{\tau}_R$ production.}
+		assuming $\tilde{\tau}_L \tilde{\tau}_L$, $\tilde{\tau}_L \tilde{\tau}_R$ and $\tilde{\tau}_R \tilde{\tau}_R$ production~\cite{ATLAS:2018diz}.}
 	\label{fig:hl-lhc-stau}
 \end{figure}
 
 
-The 95\% CL exclusion limits and discovery potentials were calculated 
+Figure~\ref{fig:hl-lhc-stau} shows the 95\% CL exclusion limits and discovery potentials calculated 
 for  $\tilde{\tau}_L \tilde{\tau}_L$ and $\tilde{\tau}_R \tilde{\tau}_R$ production, either alone or in combination, assuming a massless $\tilde{\chi}_1^0$.
-
 The exclusion limit reaches 730 GeV in stau mass for the combined $\tilde{\tau}_L \tilde{\tau}_L$ and $\tilde{\tau}_R \tilde{\tau}_R$,
 and 680 GeV (420 GeV) for pure  $\tilde{\tau}_L \tilde{\tau}_L$ (pure $\tilde{\tau}_R \tilde{\tau}_R$) production with a massless $\tilde{\chi}_1^0$.
-
-The discovery sensitivity reaches 110 - 530 GeV (110 - 500 GeV) in stau mass for the combined  $\tilde{\tau}_L \tilde{\tau}_L$ and $\tilde{\tau}_R \tilde{\tau}_R$,
+The discovery sensitivity reaches 110-530 GeV (110-500 GeV) in stau mass for the combined  $\tilde{\tau}_L \tilde{\tau}_L$ and $\tilde{\tau}_R \tilde{\tau}_R$,
 (pure $\tilde{\tau}_L \tilde{\tau}_L$) production with a massless $\tilde{\chi}_1^0$.
 
 
 Based on the search channels and methods considered in this ATLAS analysis, the HL-LHC is not expected to have discovery
-potential for the stau co-annhilitation scenario or for the production of light right-handed stau pairs $\tilde{\tau}_R \tilde{\tau}_R$  (as the cross-section is very small), making these scenarios excellent benchmarks for further study at HL-LHC as well as for future collider-based
+potential for the stau co-annihilation scenario or for the production of light right-handed stau pairs $\tilde{\tau}_R \tilde{\tau}_R$  (as the cross-section is very small), making these scenarios excellent benchmarks for further study at HL-LHC as well as for future collider-based
 experiments. 
 
 

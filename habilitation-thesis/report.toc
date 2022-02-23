@@ -64,11 +64,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{R-Parity Violating Processes}{32}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{R-Parity Conserving Processes}{33}{section*.22}%
+\contentsline {subsubsection}{R-Parity Conserving Processes}{34}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Methodology}{34}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Methodology}{35}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Event categorization strategy}{34}{section*.25}%
+\contentsline {subsubsection}{Event categorization strategy}{35}{section*.25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Trigger Strategy}{36}{section*.27}%
 \defcounter {refsection}{0}\relax 
@@ -76,31 +76,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Background processes}{39}{section*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Irreducible background estimate}{39}{section*.34}%
+\contentsline {subsubsection}{Reducible background estimate}{40}{section*.34}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Systematic uncertainties}{42}{section*.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Results}{42}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Results}{45}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Comparison with CMS}{47}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.5}Comparison with CMS}{48}{subsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Conclusions}{49}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.6}Conclusions}{50}{subsection.3.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Search for direct stau lepton production}{50}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Search for direct stau lepton production}{51}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Motivation}{50}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Motivation}{51}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Methodology}{52}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Methodology}{53}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Backgrounds}{53}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Backgrounds}{54}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Systematic uncertainties}{54}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}Systematic uncertainties}{55}{subsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}Results}{55}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.5}Results}{56}{subsection.3.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.6}Comparison with CMS}{55}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.6}Comparison with CMS}{56}{subsection.3.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.7}Conclusions}{56}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.7}Conclusions}{57}{subsection.3.3.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Synopsis}{61}{chapter.4}%
 \defcounter {refsection}{0}\relax 
@@ -116,6 +116,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Outlook}{72}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Appendix A}{83}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Appendix A}{81}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Appendix B}{85}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Appendix B}{83}{chapter.6}%
